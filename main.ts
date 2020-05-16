@@ -51,6 +51,7 @@ scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.stairLadder, function (sp
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.buttonTeal, function (sprite, location) {
     info.changeLifeBy(1)
+    tiles.setTileAt(location, sprites.builtin.brick)
 })
 function startGame () {
     tiles.setTilemap(tiles.createTilemap(
